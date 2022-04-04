@@ -1,0 +1,32 @@
+﻿<Window x:Class="Assignment1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Assignment1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <DockPanel Background="LightGray">
+        <Image DockPanel.Dock="Left" Source="/Images/76.jpg" Stretch="Fill" Height="450" Width="300"></Image>
+        <Border Background="WhiteSmoke" CornerRadius="30" Margin="20">
+            <StackPanel Margin="10" Height="365" >
+                <Label Content="Sign Up" Foreground="Red" FontSize="25" FontWeight="Bold"/>
+                <Separator/>
+                <Label Content="User Name" Foreground="Red" FontSize="15"/>
+                <TextBox x:Name="txtUsername" Background="LightGray" FontSize="15"/>
+                <Label Content="Password" Foreground="Red" FontSize="15"/>
+                <TextBox x:Name="txtPassword" Background="LightGray" FontSize="15"/>
+                <Label Content="Re-enter Password" Foreground="Red" FontSize="15"/>
+                <TextBox x:Name="txtRepassword" Background="LightGray" FontSize="15"/>
+                <Label Content="Email" Foreground="Red" FontSize="15"/>
+                <TextBox x:Name="txtemail" Background="LightGray" FontSize="15"/>
+
+
+                <CheckBox Content="I Agree Terms and Conditions" FontSize="12" Foreground="Red" Margin="10" />
+
+                <Button x:Name="btnSignUp"  Content="Sign Up" Margin="60 10" Background="Red" Foreground="White" FontSize="15" />
+            </StackPanel>
+        </Border>
+
+    </DockPanel>
+</Window>
